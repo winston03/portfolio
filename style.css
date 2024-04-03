@@ -1,0 +1,738 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Luckiest+Guy&family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:wght@100..900&family=Luckiest+Guy&family=Mochiy+Pop+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* background: rgb(53, 71, 41); */
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style-type: none;
+}
+
+header ul li {
+    /* background: rgb(221, 255, 223,.7); */
+    padding: 10px .1px;
+    border-radius: 4rem;
+    transition: all .2s ease-in-out;
+}
+
+header ul li.active{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+header{
+    height: 16vh;
+    display: flex;
+    /* background: black; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+}
+
+.helo li a{
+    /* background: red; */
+    color: rgb(46, 48, 20);
+    transition: all .2s ease-in-out;
+}
+
+.links a{
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-family: 'Mochiy Pop one', sans-serif;
+    color: rgb(111, 105, 65);
+    /* backdrop-filter: blur(10px); */
+    font-size: 17px;
+    /* font-weight: 600; */
+}
+
+.links{
+    padding: 10px 20px;
+    position: fixed;
+    top: 25px;
+    align-items: center;
+    z-index: 1;
+    /* cursor: pointer; */
+    /* padding: 20px; */
+    border-radius: 50px;
+    display: flex;
+    /* background: red; */
+    background: rgba(234, 232, 203, 0.608);
+    /* box-shadow: 0px 0px 10px rgba(0,0,0,.1); */
+    backdrop-filter: blur(10px);
+}
+
+.container {
+    background: #fffcd7;
+    /* height: 430vh; */
+    display: flex;
+    flex-direction: column;
+    /* background: red; */
+    /* align-items: center; */
+    /* position: relative; */
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.home {
+    /* position: absolute; */
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.starone{
+    position: absolute;
+    top: -30px;
+    right: -20px;
+}
+
+.startwo{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+}
+
+.homebox{
+    margin-top: 80px;
+    position: relative;
+    padding: 50px;
+    /* background: red; */
+}
+
+.home p:not(.small) {
+    /* font-family: "Luckiest Guy", cursive; */
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Mochiy Pop one', sans-serif;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,.5); */
+    font-style: normal;
+    color: rgb(69, 100, 54);
+}
+
+.groupofbox img{
+    transition: all .4s ease-in-out;
+    width: 100%;
+    height: 100%;
+    filter: blur(5px);
+}
+
+.small {
+    color: rgb(69, 100, 54);
+    font-family: 'Mochiy Pop one', sans-serif;
+    text-align: center;
+    /* font-weight: 600; */
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.groupofbox {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+    /* background: red; */
+    flex-wrap: wrap;
+}
+
+.boxone, .boxtwo, .boxthree, .boxfour {
+    width: 40%;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    overflow: hidden;
+    background: rgba(0,0,0.5);
+    /* transition: all .2s ease-in-out; */
+}
+
+.boxone:hover .ygi{
+    opacity: 1;
+}
+
+.boxone:hover img{
+    opacity: .4;
+    transform: scale(1.2);
+    filter: blur(0px);
+}
+
+.boxtwo:hover .ygi{
+    opacity: 1;
+}
+
+.boxtwo:hover img{
+    opacity: .4;
+    transform: scale(1.2);
+    filter: blur(0px);
+}
+
+.boxthree:hover .ygi{
+    opacity: 1;
+}
+
+.boxthree:hover img{
+    opacity: .4;
+    transform: scale(1.2);
+    filter: blur(0px);
+}
+
+.boxfour:hover .ygi{
+    opacity: 1;
+}
+
+.boxfour:hover img{
+    opacity: .4;
+    transform: scale(1.2);
+    filter: blur(0px);
+}
+
+.boxes .ygi{
+    font-size: 40px;
+    opacity: 0;
+    position: absolute;
+    text-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    transition: all .4s ease-in-out;
+    color: white;
+}
+
+.boxes h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Mochiy Pop one', sans-serif;
+    /* letter-spacing: 3px; */
+    /* text-shadow: 0 0 10px rgba(0,0,0,.3); */
+    color: rgb(69, 100, 54);
+}
+
+.boxes a{
+    transition: all .1s ease-in-out;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.abtbox{
+    position: relative;
+    /* height: 30vh; */
+    width: 80%;
+    margin-top: 50px;
+    /* background: red; */
+    flex-direction: column;
+    display: flex;
+    backdrop-filter: blur(10px);
+    /* justify-content: space-around; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+.coverabt{
+    /* background: rgba(255, 255, 255, 0.563); */
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    /* background: red; */
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    display: flex;
+    /* background: yellow; */
+    /* height: 10vh; */
+}
+
+.music i{
+    font-size: 45px;
+    color: #1db954;
+    /* opacity: .8; */
+    /* padding: 20px; */
+    /* text-shadow: 0 0 10px rgba(0,0,0,.3); */
+}
+
+.music a, .insta a, .fiverr a {
+    font-weight: 800;
+    color: rgb(69, 100, 54);
+    /* color: rgb(53, 106, 94); */
+    font-family: 'Inter';
+    text-decoration: none;
+}
+
+.fiverr a {
+    /* position: relative; */
+    /* left: -65px; */
+}
+
+.fiverr img{
+    /* position: absolute; */
+    /* left: 31px; */
+}
+
+.insta img {
+    /* position: absolute; */
+    /* margin-right: 14px; */
+}
+
+.insta a{
+    /* position: relative; */
+    /* left: -110px; */
+}
+
+.insta {
+    border-radius: 50px;
+    height: 8vh;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    backdrop-filter: blur(10px);
+    position: relative;
+    width: 33%;
+    /* left: 0; */
+    /* top: 20px; */
+    gap: 120px;
+    align-items: center;
+    /* background: red; */
+}
+
+.fiverr {
+    border-radius: 50px;
+    height: 8vh;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    backdrop-filter: blur(10px);
+    position: relative;
+    width: 33%;
+    /* left: 0; */
+    /* top: 20px; */
+    gap: 210px;
+    align-items: center;
+    /* background: red; */
+}
+
+.music{
+    border-radius: 50px;
+    height: 8vh;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    /* width: 50%; */
+    backdrop-filter: blur(10px);
+    position: relative;
+    width: 33%;
+    /* left: 0; */
+    /* top: 20px; */
+    gap: 20px;
+    align-items: center;
+    /* background: red; */
+}
+
+.rightcoverabt p{
+    color: white;
+    font-weight: 600;
+    font-family: 'Inter';
+    font-size: 20px;
+    padding: 20px;
+}
+
+.rightone{
+    margin-left: 800px;
+    background: rgb(69, 100, 54);
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 10px rgba(0,0,0,.3); */
+}
+
+.righttwo{
+    margin-left: 600px;
+    background: rgb(69, 100, 54);
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 10px rgba(0,0,0,.3); */
+}
+
+
+.rightthree{
+    margin-left: 400px;
+    background: rgb(69, 100, 54);
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 10px rgba(0,0,0,.3); */
+}
+
+.rightfour{
+    margin-left: 200px;
+    background: rgb(69, 100, 54);
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 10px rgba(0,0,0,.3); */
+}
+
+.rightfive{
+    background: rgb(69, 100, 54);
+    border-radius: 30px;
+    /* box-shadow: 2px 2px 10px rgba(0,0,0,.3); */
+}
+
+.numbers{
+    font-family: "Luckiest Guy", cursive;
+    color: rgb(69, 100, 54);
+    font-size: 60px;
+    position: relative;
+    left: -70px;
+    /* margin-left: -50px; */
+}
+
+.rightcoverabt div{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+form{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form h1{
+    text-align: center;
+    color: rgb(69, 100, 54);
+    font-size: 3rem;
+    font-family: 'Mochiy Pop one', sans-serif;
+    /* letter-spacing: 3px; */
+}
+
+.username, .email{
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    position: relative;
+}
+
+input{
+    border: 2.5px solid white;
+    background: none;
+    font-size: 1rem;
+    padding: 1rem;
+    /* width: 100%; */
+    border-radius: 1rem;
+    transition: all .1s ease-in-out;
+    color: white;
+    width: 17em;
+    /* line-height: -1px; */
+}
+
+.uelab{
+    position: absolute;
+    left: 15px;
+    font-family: 'Inter';
+    pointer-events: none;
+    color: white;
+    transition: 150ms ease;
+    transform: translateY(1.15rem);
+}
+
+input:focus, input:valid{
+    outline: none;
+    border: 2.5px solid rgb(143, 255, 201);
+}
+input:focus ~ .uelab, input:valid ~ .uelab {
+    background: rgb(69, 100, 54);
+    transform: translateY(-50%) scale(0.8);
+    padding: 0.2em;
+    color: rgb(143, 255, 201);
+}
+
+.contactbox{
+    height: 63vh;
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    width: 30%;
+    backdrop-filter: blur(10px);
+    background: rgb(69, 100, 54);
+}
+
+textarea{
+    background: transparent;
+    color: white;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 2.5px solid white;
+    resize: none;
+    transition: 150ms ease;
+    padding: 10px;
+}
+
+ textarea:focus {
+     border-color: rgb(143, 255, 201);
+     outline: none;
+    }
+    
+    ::placeholder {
+        color: white;
+        opacity: .5;
+        font-family: 'Inter';
+ }
+
+ button {
+    /* margin-top: 20px; */
+    background: rgb(209, 247, 204);
+    color: rgb(19, 41, 20);
+    font-weight: 600;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Inter';
+    outline: none;
+    border-radius: 10px;
+    transition: all .1s ease-in-out;
+ }
+
+ button:hover {
+    background: rgb(51, 87, 60);
+    color: whitesmoke;
+ }
+
+ .copyright {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    align-items: center;
+    font-family: 'Inter';
+    color: rgb(65, 91, 46);
+}
+
+.copyright a{
+    text-decoration: none;
+    /* font-family: 'Mochiy Pop one', sans-serif; */
+    color: rgb(65, 91, 46);
+    font-weight: 700;
+    /* font-weight: 600; */
+ }
+
+ .homebox img{
+    animation: loop 3.5s infinite linear;
+ }
+
+ @keyframes loop {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+ }
+
+ @media screen and (max-width: 1023px){
+    .links a{
+        font-size: 15px;
+        /* padding: 8px 13px; */
+    }
+
+    .container{
+        position: absolute;
+        /* height: 378vh; */
+        width: 100%;
+    }
+
+    .links{
+        padding: 10px 12px;
+        /* background: red; */
+        background: rgb(138, 189, 99,.2);
+        display: flex;
+        align-items: center;
+        /* box-shadow: 0 0 20px rgba(0,0,0,.2); */
+    }
+
+    ul{
+        gap: 12px;
+    }
+
+    br {
+        display: none;
+    }
+
+    .homebox{
+        margin-top: 0;
+    }
+
+    .homebox p:not(.small){
+        font-size: 37px;
+    }
+
+    .homebox img {
+        width: 45px;
+        height: 45px;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    .starone{
+        right: 20px;
+        top: 0;
+    }
+
+    .startwo{
+        left: 20px;
+        bottom: 40px;
+    }
+
+    .rightcoverabt div {
+        margin: 0;
+        /* padding: 0; */
+    }
+
+    .small {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .numbers{
+        display: none;
+    }
+
+    .rightcoverabt p{
+        font-size: 17px;
+    }
+
+    .boxes h1, form h1{
+        font-size: 25px;
+    }
+
+    #contact{
+        margin-top: 100px;
+        position: relative;
+        width: 100%;
+        /* background: red; */
+    }
+
+    .boxes {
+        margin-top: 30px;
+        /* background: red; */
+    }
+
+    .rightcoverabt{
+        gap: 10px;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .groupofbox{
+        /* flex-wrap: nowrap; */
+        /* flex-direction: column; */
+        margin-top: 27px;
+        display: flex;
+        align-items: center;
+    }
+
+    .boxone, .boxtwo, .boxthree, .boxfour {
+        width: 90%;
+        height: auto;
+    }
+
+    .coverabt {
+        margin-top: 30px;
+    }
+
+    .music{
+        /* background: red; */
+        width: 100%;
+        gap: 0;
+        justify-content: space-around;
+        /* position: relative; */
+    }
+
+    .insta a{
+        /* left: -55px; */
+    }
+
+    .insta, .fiverr {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 10px;
+        gap: 0;
+    }
+
+    .fiverr {
+        
+    }
+
+
+    /* .fiverr img{
+        left: 5px;
+    }
+
+    .fiverr a {
+        left: -30px;
+    }
+
+    .insta img {
+        margin-left: -12px;
+    }
+
+    .music a{
+        width: 60%;
+        /* background: red; */
+    
+
+    form h1{
+        padding-bottom: 30px;
+    }
+
+    .contactbox{
+        width: 80%;
+        height: 60vh;
+        gap: 20px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        resize: none;
+    }
+
+    textarea{
+        position: relative;
+        top: 41px;
+        /* width: 100%; */
+        width: 240px;
+    }
+
+    button{
+        margin-top: 37px;
+    }
+
+    .copyright{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    input{
+        width: 14em;
+    }
+ }
